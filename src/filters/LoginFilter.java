@@ -12,6 +12,7 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+
 import models.Employee;
 /**
  * Servlet Filter implementation class LoginFilter
@@ -70,7 +71,7 @@ public class LoginFilter implements Filter {
         // pass the request along the filter chain
         chain.doFilter(request, response);
     }
-
+    }
     /**
      * @see Filter#init(FilterConfig)
      */
