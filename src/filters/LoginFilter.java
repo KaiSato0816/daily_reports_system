@@ -63,7 +63,7 @@ public class LoginFilter implements Filter {
                 ((HttpServletResponse)response).sendRedirect(context_path + "/");
                 return;
             }
-            chain.doFilter(request, response);
+
         }
         // TODO Auto-generated method stub
         // place your code here
