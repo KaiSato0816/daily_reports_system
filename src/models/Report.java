@@ -61,6 +61,17 @@ public class Report {
     @Column(name = "updated_at", nullable = false)
     private Timestamp updated_at;
 
+    @Column(name = "start" , nullable = false)
+    private String start;
+
+    @Column(name = "end" , nullable = false)
+    private String end;
+
+
+
+
+
+
     public Integer getId() {
         return id;
     }
@@ -116,4 +127,26 @@ public class Report {
     public void setUpdated_at(Timestamp updated_at) {
         this.updated_at = updated_at;
     }
+
+    public String getstart(){
+        return start;
+    }
+
+    public void  setstart(String start){
+        this.start = start;
+    }
+
+    public String getend(){
+        return end;
+    }
+
+
+    public void  setend(String end){
+        this.end = end;
+    }
+
+
+
+
+
 }
