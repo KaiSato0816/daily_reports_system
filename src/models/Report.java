@@ -61,10 +61,10 @@ public class Report {
     @Column(name = "updated_at", nullable = false)
     private Timestamp updated_at;
 
-    @Column(name = "start" , nullable = false)
+    @Column(name = "start" , length = 255, nullable = false)
     private String start;
 
-    @Column(name = "end" , nullable = false)
+    @Column(name = "end" , length = 255, nullable = false)
     private String end;
 
 
@@ -128,20 +128,20 @@ public class Report {
         this.updated_at = updated_at;
     }
 
-    public String getstart(){
+    public String getStart(){
         return start;
     }
 
-    public void  setstart(String start){
+    public void  setStart(String start){
         this.start = start;
     }
 
-    public String getend(){
+    public String getEnd(){
         return end;
     }
 
 
-    public void  setend(String end){
+    public void  setEnd(String end){
         this.end = end;
     }
 

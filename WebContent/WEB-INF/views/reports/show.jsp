@@ -38,13 +38,13 @@
                         <tr>
                             <th>出勤時間</th>
                             <td>
-                                <fmt:formatDate value="${report.start}" pattern="yyyy-MM-dd HH:mm:ss" />
+                                <c:out value="${report.start}"  />
                             </td>
                         </tr>
                         <tr>
                             <th>退勤時間</th>
                             <td>
-                                <fmt:formatDate value="${report.end}" pattern="yyyy-MM-dd HH:mm:ss" />
+                                <c:out value="${report.end}"  />
                             </td>
                         </tr>
                     </tbody>
